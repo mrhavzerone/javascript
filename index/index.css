@@ -2,3 +2,14 @@ h1 {
     background-color: red;
     font-size: large;
 }
+
+div {
+    margin: 20%;
+    padding: 30px;
+    /* background-color: black; */
+    border: 5px solid red;
+    border-radius: 10% 30%;
+
+    background-color: aqua;
+    box-sizing: border-box;
+}
