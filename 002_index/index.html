@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_form</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <form onsubmit=validateForm(event)>
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required><br><br>
+        <label for="confirm-password">Confirm password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" minlength="8" required><br><br>
+        <label for="birth-date">Birth date:</label>
+        <input type="date" id="birth-date" name="birth-date" required>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">female</label>
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">I agree to the terms</label>
+        <input type="submit" value="Register">
+    </form>
+    <div class="box"></div>
+    <div class="pulse"></div>
+    <div class="spin-grow"></div>
+</body>
+
+</html>
