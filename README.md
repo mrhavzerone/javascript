@@ -1,2 +1,2 @@
 # javascript
-Javacript learning repo
+reinit
