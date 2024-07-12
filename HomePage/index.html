@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашня сторінка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Привіт, Чемпіон!<br>Де сьогодні будеш перемагати?</h1>
+        </header>
+        <main><!---
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Пошук Google або введіть URL">
+            </div>-->
+            <section id="links-section">
+                <!-- Список збережених посилань буде тут -->
+            </section>
+            <section id="add-link-section">
+                <button id="add-link-button">Додати нове посилання</button>
+            </section>
+        </main>
+        <div id="theme-toggle">
+            <input type="checkbox" id="theme-checkbox">
+            <label for="theme-checkbox" class="slider"></label>
+        </div>
+    </div>
+
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Додати нове посилання</h2>
+            <form id="add-link-form">
+                <label for="link-name">Назва:</label>
+                <input type="text" id="link-name" required>
+                <label for="link-url">URL:</label>
+                <input type="url" id="link-url" required>
+                <button type="submit">Додати</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
